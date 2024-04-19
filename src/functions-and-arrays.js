@@ -113,7 +113,20 @@ return result;
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(wordsFind,compare) {
+  if(!wordsFind.length) return null;
+
+for (i = 0; i < wordsFind.length; i++) {
+
+// Comprobamos si la palabra actual coincide con la palabra buscada
+if (wordsFind[i] === compare) {
+    return true;
+}
+}
+// Si llegamos aquí significa que la palabra no se encontró en el array
+return false;
+
+}
 
 
 
